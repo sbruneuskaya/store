@@ -1,0 +1,61 @@
+.fullCard .addToCart{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #ca5252;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.addToCart:hover{
+  transform: scale(1.5) translateY(-5px);
+}
+
+h2,
+p,
+b{
+  margin: 10px 20px;
+  color: #333;
+}
+
+b{
+  color: #5fa36a;
+}
+
+.fullCard img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  transition: transform 500ms ease;
+  //height: 384px;
+}
+
+.fullCard img:hover{
+  transform: scale(1.05);
+}
+
+.fullCard{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  overflow: auto;
+}
+
+.wrapper{
+  width: 600px;
+  border-radius: 9px;
+  background: #fff;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 30px;
+}
