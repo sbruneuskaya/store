@@ -1,12 +1,12 @@
-import armchairDark from '../../../assets/images/img/armchair-dark.jpg';
-import chair from '../../../assets/images/img/chair.jpg';
-import dresser from '../../../assets/images/img/dresser.png';
-import lamp from '../../../assets/images/img/lamp.jpg';
-import sofaLight from '../../../assets/images/img/sofa-light.png';
-import armchairLight from '../../../assets/images/img/armchair-light.jpg';
-import chairLight from '../../../assets/images/img/chair-light.jpg';
-import dresserLight from '../../../assets/images/img/dresser-light.png';
-import sofaDark from '../../../assets/images/img/sofa-dark.jpg';
+import armchairDark from './../../../assets/images/img/armchair-dark.jpg';
+import chair from './../../../assets/images/img/chair.jpg';
+import dresser from './../../../assets/images/img/dresser.png';
+import lamp from './../../../assets/images/img/lamp.jpg';
+import sofaLight from './../../../assets/images/img/sofa-light.png';
+import armchairLight from './../../../assets/images/img/armchair-light.jpg';
+import chairLight from './../../../assets/images/img/chair-light.jpg';
+import dresserLight from './../../../assets/images/img/dresser-light.png';
+import sofaDark from './../../../assets/images/img/sofa-dark.jpg';
 
 const data = [
     {
