@@ -8,7 +8,7 @@ export class Cards extends Component {
 
     render() {
         return (
-            <main>
+            <main className={styles.main}>
                 {this.props.items.map(el =>
                     <Card key={el.id} item={el} addOrder={this.props.addOrder} onModalItem={this.props.onModalItem}/>
                 )}

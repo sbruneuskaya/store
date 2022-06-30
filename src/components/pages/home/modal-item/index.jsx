@@ -9,7 +9,7 @@ export class ModalItem extends Component {
         return (
             <div className={styles.fullCard}>
                 <div className={styles.wrapper}>
-                    <img src={"./img/" + this.props.item.img} alt="img" onClick={()=> this.props.onModalItem(this.props.item)}/>
+                    <img src={this.props.item.img} alt="img" onClick={()=> this.props.onModalItem(this.props.item)}/>
                     <h2>{this.props.item.title}</h2>
                     <p>{this.props.item.description}</p>
                     <b>{this.props.item.price}$</b>
