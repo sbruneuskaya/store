@@ -1,0 +1,57 @@
+.shopCardButton {
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+.shopCardButton:hover,
+.shopCardButton.active {
+  color: #dc3d3d;
+  transform: scale(1.5);
+}
+
+.shopCard {
+  position: absolute;
+  min-width: 450px;
+  top: 30px;
+  right: 0;
+  background: #fafafa;
+  box-shadow: 4px 5px 15px -7px #606060;
+  z-index: 1;
+  padding: 20px 20px 0;
+}
+
+.shopCard h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sum{
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav {
+  float: right;
+  list-style: none;
+}
+
+.nav li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+.nav li:hover {
+  opacity: 0.5;
+}
+

@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import styles from './styles.module.scss';
+import Order from "../pages/home/order";
 import {FaShoppingCart} from "react-icons/fa";
 import classNames from "classnames";
-import Order from "../order";
+import {useNavigate} from "react-router";
+
 
 const showOrders = (props) => {
     let result=0;
@@ -26,17 +28,16 @@ const showText = () => {
 
 const Header = (props) => {
     let [open, setOpen] = useState(false);
-
+    const navigate = useNavigate()
     return (
-        <header>
             <div>
                 <span className={styles.logo}>house staff</span>
                 <ul className={styles.nav}>
-                    <li>Про нас</li>
+                    <li onClick={()=>navigate('/')}>Главная</li>
                     <li>Контакты</li>
                     <li>Кабинет</li>
                 </ul>
-                <FaShoppingCart onClick={() => setOpen(open = !open)}
+                <FaShoppingCart style={{display:`${props.style}`}} onClick={() => setOpen(open = !open)}
                                 className={classNames(styles.shopCardButton, open ? styles.active : '')}/>
                 {open && (
                     <div className={styles.shopCard}>
@@ -44,8 +45,6 @@ const Header = (props) => {
                     </div>
                 )}
             </div>
-            <div className={styles.presentation}/>
-        </header>
     )
 }
 

@@ -5,8 +5,9 @@ import data from './data';
 import Cards from "./cards";
 import Categories from "./categories/categories";
 import ModalItem from "./modal-item";
-import Header from "./header";
-import BasicPagination from "./../../pagination";
+import ButtonRedirect from "../../button";
+import HomeTitle from "./home-title";
+import Header from "../../header";
 
 
 class Home extends React.Component {
@@ -16,8 +17,8 @@ class Home extends React.Component {
             orders: [],
             currentItems: [],
             items: [...data],
-            modalItem:false,
-            fullCard:{},
+            modalItem: false,
+            fullCard: {},
         }
         this.state.currentItems = this.state.items
         this.chooseCategory = this.chooseCategory.bind(this)
@@ -29,16 +30,16 @@ class Home extends React.Component {
 
     componentDidMount = () => {
         this._getOrdersFromStorage();
-        this._getCurrentItemsFromStorage();
+        // this._getCurrentItemsFromStorage();
     }
 
     componentDidUpdate() {
         this._setOrdersToStorage();
-        this._setCurrentItemsToStorage()
+        // this._setCurrentItemsToStorage()
     }
 
     _getOrdersFromStorage() {
-        if(typeof localStorage.orders === 'undefined') {
+        if (typeof localStorage.orders === 'undefined') {
             localStorage.orders = '[]';
         }
 
@@ -51,34 +52,36 @@ class Home extends React.Component {
         localStorage.orders = JSON.stringify(this.state.orders);
     }
 
-    _getCurrentItemsFromStorage() {
-        if(typeof localStorage.currentItems === 'undefined') {
-            localStorage.currentItems = '[]';
-        }
-
-        this.setState({
-            currentItems: JSON.parse(localStorage.currentItems)
-        });
-    }
-
-    _setCurrentItemsToStorage() {
-        localStorage.currentItems = JSON.stringify(this.state.currentItems);
-    }
+    // _getCurrentItemsFromStorage() {
+    //     if (typeof localStorage.currentItems === 'undefined') {
+    //         localStorage.currentItems = '[]';
+    //     }
+    //
+    //     this.setState({
+    //         currentItems: JSON.parse(localStorage.currentItems)
+    //     });
+    // }
+    //
+    // _setCurrentItemsToStorage() {
+    //     localStorage.currentItems = JSON.stringify(this.state.currentItems);
+    // }
 
     render() {
         return (
             <div className={styles.wrapper}>
-                <Header orders={this.state.orders} onDelete={this.deleteOrder}/>
+                <Header orders={this.state.orders} onDelete={this.deleteOrder} style="block"/>
+                <HomeTitle orders={this.state.orders} onDelete={this.deleteOrder}/>
                 <Categories getCategory={this.chooseCategory}/>
                 <Cards onModalItem={this.onModalItem} items={this.state.currentItems} addOrder={this.addToOrder}/>
-                {this.state.modalItem && <ModalItem item={this.state.fullCard} onModalItem={this.onModalItem} addOrder={this.addToOrder}/>}
-                <BasicPagination/>
+                {this.state.modalItem &&
+                <ModalItem item={this.state.fullCard} onModalItem={this.onModalItem} addOrder={this.addToOrder}/>}
+                <ButtonRedirect title="Смотреть вcё"/>
                 <Footer/>
             </div>
         );
     }
 
-    onModalItem(item){
+    onModalItem(item) {
         this.setState({fullCard: item})
         this.setState({modalItem: !this.state.modalItem})
     }
@@ -111,7 +114,6 @@ class Home extends React.Component {
                 }
             )
         }
-
     }
 }
 

@@ -13,7 +13,8 @@ export class Categories extends Component {
                 },
                 {
                     key:'armchair',
-                    name: '#Кресло'
+                    name: '#Кресло',
+                    color: ''
                 },
                 {
                     key:'chair',
@@ -39,7 +40,9 @@ export class Categories extends Component {
         return (
             <div className={styles.categories}>
                 {this.state.category.map(el=>(
-                    <div key={el.key} className={styles.categoriesItem} onClick={()=>this.props.getCategory(el.key)}>{el.name}</div>
+                    <div key={el.key} className={styles.categoriesItem} onClick={()=>this.props.getCategory(el.key)}>
+                        <div>{el.name}</div>
+                    </div>
                 ))}
             </div>
         );
