@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/store_project/static/css/main.ec950e12.css",
-    "main.js": "/store_project/static/js/main.c6ada52f.js",
-    "static/js/787.884e199e.chunk.js": "/store_project/static/js/787.884e199e.chunk.js",
+    "main.js": "/store_project/static/js/main.3905d6b0.js",
+    "static/js/787.60ae9cf4.chunk.js": "/store_project/static/js/787.60ae9cf4.chunk.js",
     "static/media/smoke.mp4": "/store_project/static/media/smoke.c429fe5e134a30e084f8.mp4",
     "static/media/armchair-dark.jpg": "/store_project/static/media/armchair-dark.261ff6332b465feeaac1.jpg",
     "static/media/sofa-dark.jpg": "/store_project/static/media/sofa-dark.b126bac7a44bfe3240e5.jpg",
@@ -18,11 +18,11 @@
     "static/media/chair-light.jpg": "/store_project/static/media/chair-light.f1468530b219476039ac.jpg",
     "index.html": "/store_project/index.html",
     "main.ec950e12.css.map": "/store_project/static/css/main.ec950e12.css.map",
-    "main.c6ada52f.js.map": "/store_project/static/js/main.c6ada52f.js.map",
-    "787.884e199e.chunk.js.map": "/store_project/static/js/787.884e199e.chunk.js.map"
+    "main.3905d6b0.js.map": "/store_project/static/js/main.3905d6b0.js.map",
+    "787.60ae9cf4.chunk.js.map": "/store_project/static/js/787.60ae9cf4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec950e12.css",
-    "static/js/main.c6ada52f.js"
+    "static/js/main.3905d6b0.js"
   ]
 }
