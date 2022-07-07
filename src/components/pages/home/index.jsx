@@ -70,13 +70,15 @@ class Home extends React.Component {
         return (
             <div className={styles.wrapper}>
                 <Header orders={this.state.orders} onDelete={this.deleteOrder} style="block"/>
-                <HomeTitle orders={this.state.orders} onDelete={this.deleteOrder}/>
-                <Categories getCategory={this.chooseCategory}/>
-                <Cards onModalItem={this.onModalItem} items={this.state.currentItems} addOrder={this.addToOrder}/>
-                {this.state.modalItem &&
-                <ModalItem item={this.state.fullCard} onModalItem={this.onModalItem} addOrder={this.addToOrder}/>}
-                <ButtonRedirect title="Смотреть вcё"/>
-                <Footer/>
+                <div className={styles.container}>
+                    <HomeTitle orders={this.state.orders} onDelete={this.deleteOrder}/>
+                    <Categories getCategory={this.chooseCategory}/>
+                    <Cards onModalItem={this.onModalItem} items={this.state.currentItems} addOrder={this.addToOrder}/>
+                    {this.state.modalItem &&
+                    <ModalItem item={this.state.fullCard} onModalItem={this.onModalItem} addOrder={this.addToOrder}/>}
+                    <ButtonRedirect title="Смотреть вcё"/>
+                    <Footer/>
+                </div>
             </div>
         );
     }

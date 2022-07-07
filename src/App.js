@@ -3,6 +3,8 @@ import styles from './App.module.scss';
 import {Routes, Route} from 'react-router-dom';
 import Home from "./components/pages/home";
 import Search from "./components/pages/search";
+import Profile from "./components/pages/profile";
+import Contacts from "./components/pages/contacts";
 
 
 
@@ -12,13 +14,13 @@ class App extends React.Component {
         return (
             <>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
+                    <Route path="/" element={<Profile/>}/>
                     <Route path="/store" element={<Home/>}/>
                     <Route path="/search" element={<Search/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
                 </Routes>
             </>
-        )
-            ;
+        );
     }
 }
 

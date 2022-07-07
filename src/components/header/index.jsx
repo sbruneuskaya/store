@@ -30,11 +30,12 @@ const Header = (props) => {
     let [open, setOpen] = useState(false);
     const navigate = useNavigate()
     return (
-            <div>
-                <span className={styles.logo}>house staff</span>
+            <div className={styles.wrapper}>
+                <span className={styles.logo}>store</span>
                 <ul className={styles.nav}>
-                    <li onClick={()=>navigate('/')}>Главная</li>
-                    <li>Контакты</li>
+                    <li onClick={()=>navigate('/')}>Профайл</li>
+                    <li onClick={()=>navigate('/store')}>Главная</li>
+                    <li onClick={()=>navigate('/contacts')}>Контакты</li>
                     <li>Кабинет</li>
                 </ul>
                 <FaShoppingCart style={{display:`${props.style}`}} onClick={() => setOpen(open = !open)}

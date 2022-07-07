@@ -1,3 +1,13 @@
+.wrapper{
+  position: absolute;
+  padding: 50px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: white;
+}
+
 .shopCardButton {
   float: right;
   cursor: pointer;
@@ -13,7 +23,7 @@
 .shopCard {
   position: absolute;
   min-width: 450px;
-  top: 30px;
+  top: 95px;
   right: 0;
   background: #fafafa;
   box-shadow: 4px 5px 15px -7px #606060;
