@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/store/static/css/main.27a4f213.css",
-    "main.js": "/store/static/js/main.b534fb78.js",
+    "main.css": "/store/static/css/main.d709a59b.css",
+    "main.js": "/store/static/js/main.21f37366.js",
     "static/js/787.884e199e.chunk.js": "/store/static/js/787.884e199e.chunk.js",
     "static/media/armchair-dark.jpg": "/store/static/media/armchair-dark.261ff6332b465feeaac1.jpg",
     "static/media/sofa-dark.jpg": "/store/static/media/sofa-dark.b126bac7a44bfe3240e5.jpg",
@@ -14,12 +14,12 @@
     "static/media/sofa-light.png": "/store/static/media/sofa-light.d0e9de43bf5ea3f49b9d.png",
     "static/media/chair-light.jpg": "/store/static/media/chair-light.f1468530b219476039ac.jpg",
     "index.html": "/store/index.html",
-    "main.27a4f213.css.map": "/store/static/css/main.27a4f213.css.map",
-    "main.b534fb78.js.map": "/store/static/js/main.b534fb78.js.map",
+    "main.d709a59b.css.map": "/store/static/css/main.d709a59b.css.map",
+    "main.21f37366.js.map": "/store/static/js/main.21f37366.js.map",
     "787.884e199e.chunk.js.map": "/store/static/js/787.884e199e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27a4f213.css",
-    "static/js/main.b534fb78.js"
+    "static/css/main.d709a59b.css",
+    "static/js/main.21f37366.js"
   ]
 }
