@@ -34,7 +34,7 @@ const Header = (props) => {
                 <span className={styles.logo}>store</span>
                 <ul className={styles.nav}>
                     <li onClick={()=>navigate('/')}>Профайл</li>
-                    <li onClick={()=>navigate('/store')}>Главная</li>
+                    <li onClick={()=>navigate('/store_project')}>Главная</li>
                     <li onClick={()=>navigate('/contacts')}>Контакты</li>
                     <li>Кабинет</li>
                 </ul>
